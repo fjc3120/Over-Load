@@ -17,10 +17,12 @@
             left:50%;
             margin-left: -250px;
         }
-        .video1{
-            height: 700px;
-            width: 100%;
-        }
+    .jq-plugin{
+        /*background-color: transparent;*/
+        /*position: absolute;*/
+        /*top: 0;*/
+
+    }
     </style>
 </head>
 <body>
@@ -53,6 +55,8 @@
     </div>
 </nav>
 <!--navbar end-->
+
+
 <!--slide start-->
 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -79,6 +83,15 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+<div class="jq-plugin">
+    <div class="container">
+        <div id="particles-js"></div>
+    </div>
+    <div class="sun">
+        <div class="earth"></div>
+        <div class="other"></div>
+    </div>
 </div>
 <!--slide end-->
 <!--音乐播放器 start-->
@@ -181,5 +194,14 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+
+<script src="jq-plugin/js/particles.js"></script>
+<script src="jq-plugin/js/app.js"></script>
+<script>
+    var oJq = document.getElementsByClassName("jq-plugin")[0];
+    oJq.style.position="absolute";
+    oJq.style.top = "150px";
+    oJq.style.left = "200px";
+</script>
 </body>
 </html>
