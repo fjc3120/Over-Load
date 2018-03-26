@@ -17,11 +17,10 @@
             left:50%;
             margin-left: -250px;
         }
-    .jq-plugin{
-        /*background-color: transparent;*/
-        /*position: absolute;*/
-        /*top: 0;*/
-
+    @media (max-width: 1000px) {
+        .jq-plugin{
+            display: none;
+        }
     }
     </style>
 </head>
@@ -200,8 +199,8 @@
 <script>
     var oJq = document.getElementsByClassName("jq-plugin")[0];
     oJq.style.position="absolute";
-    oJq.style.top = "150px";
-    oJq.style.left = "200px";
+    oJq.style.top = "20%";
+    oJq.style.left = "17%";
 </script>
 </body>
 </html>
